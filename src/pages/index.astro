@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<section class=" h-screen w-full bg-[#F1F1C6] font-Poppins">
+
+		<main class="bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[400px] w-[300px] rounded-[40px] overflow-hidden shadow-2xl">
+
+			<!-- Imagen y colores de fondo -->
+			<div class=" flex flex-col items-center relative">
+
+				<picture>
+					<img src="bg1.jpg" alt="">
+				</picture>
+				
+				
+				
+				<picture class="absolute w-full h-full flex items-center justify-center">
+					<img class=" shadow-xl h-32 w-32 rounded-full object-cover object-center" src="persona.jpg" alt="">
+				</picture>
+
+
+
+				<div class=" border border-[#A2345C] w-full">
+
+				</div>
+				
+			</div>
+
+
+			<!-- Nombre y redes -->
+
+			<div class=" text-center pt-5">
+				<h1 class=" text-3xl pb-1 text-black font-light">Johnny <span class=" font-medium">Rogers</span></h1>
+			<p class=" text-sm text-gray-500 font-light">@johnnyrogers</p>
+			</div>
+
+			<div class=" flex flex-col items-center py-5 px-6">
+
+			
+				<!-- Iconos de redes -->
+
+				<ul class="flex space-x-6 pb-5">
+
+					<li><a href="#">
+							
+						<svg class=" h-6 text-gray-800 hover:text-blue-500 ease-in-out duration-200"   xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-meta"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z" /><path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z" /></svg>
+					</a></li>
+
+					<li><a href="#">
+						<svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="h-6 text-gray-800 hover:text-blue-800 icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+					</a></li>
+
+					<li><a  href="#">
+						<svg  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="h-6 text-gray-800 hover:text-blue-400 icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+					</a></li>
+
+					<li><a href="">
+						<svg  xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="h-6 text-gray-800 hover:text-pink-800 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+					</a></li>
+
+				</ul>
+
+				<p class=" text-center text-gray-800">
+					Crafting brand and communications strategies, creating visual designs, leading art direction, and capturing portraits through photography.
+				</p>
+
+				<div class=" flex w-full justify-center space-x-2 pt-10">
+					<button class="flex w-full justify-center items-center bg-[#A2345C] text-white  py-3 rounded-3xl hover:bg-white border hover:border-[#A2345C] hover:text-[#A2345C] ease-out duration-200">
+						<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="mr-2 icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>Follow</button>
+					
+					
+					<button class="flex w-full justify-center border border-black  py-3 rounded-3xl  hover:border-[#A2345C] hover:text-[#A2345C] ease-in-out duration-200"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="mr-2 icon icon-tabler icons-tabler-outline icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>Message</button>
+				</div>
+
+			</div>
+
+
+		</main>
+		
+	</section>
+</Layout>
+
